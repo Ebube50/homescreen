@@ -7,8 +7,8 @@ const Pannel=({value})=>{
             marginLeft:10
                 }}/>
 
-                <TextInput  placeholderTextColor={'black'} placeholder={value} style={{
-                borderColor:'black', paddingLeft:'20', 
+                <TextInput  placeholderTextColor={'white'} placeholder={value} style={{
+                borderColor:'white', paddingLeft:'20', color:'white',
                 borderWidth:1, fontSize:14, width:'auto', borderRadius:14, 
                 marginLeft:50, marginTop:-35, marginRight:55
                 }}/>
@@ -27,7 +27,7 @@ const Pannel=({value})=>{
 const styles =StyleSheet.create({
         container:{
            marginTop:10, 
-            backgroundColor:'#ffffff',
+            backgroundColor:'#212029',
            justifyContent:'center',
            height: 60,
         }
