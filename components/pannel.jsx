@@ -1,27 +1,23 @@
-import { Image, StyleSheet, Text, TextInput, View } from "react-native";
+import { Image, StyleSheet, TextInput, View } from "react-native";
 
-const Pannel=({text, value})=>{
+const Pannel=({value})=>{
     return(
         <View style={styles.container}>
-            <Image source={require('../assets/images/woman.png')} style={{height:30, width:30, marginTop:40, 
+            <Image source={require('../assets/images/woman.png')} style={{height:30, width:30, marginTop:5, 
             marginLeft:10
                 }}/>
 
-                 
-
-                <TextInput  placeholderTextColor={'black'} placeholder={value} style={{borderColor:'black',
-                borderWidth:.5, fontSize:10, width:220,height:32, borderRadius:30, marginLeft:55, marginTop:-35, 
-                paddingLeft:10, paddingTop:10, 
+                <TextInput  placeholderTextColor={'black'} placeholder={value} style={{
+                borderColor:'black', paddingLeft:'20', 
+                borderWidth:1, fontSize:14, width:'auto', borderRadius:14, 
+                marginLeft:50, marginTop:-35, marginRight:55
                 }}/>
 
-               <Image source={require('../assets/images/chat.png')} style={{ height:40, width:40, 
-               marginTop:-33, marginLeft:290
+               <Image source={require('../assets/images/chat.png')} style={{ height:30, width:30, 
+               marginTop:-33, alignSelf:'flex-end', marginRight:12
             
                 }}/>
 
-            <Text style={{fontSize:30, color:'white'}}>
-                {text}
-            </Text>
         </View>
 
 
@@ -30,7 +26,7 @@ const Pannel=({text, value})=>{
 
 const styles =StyleSheet.create({
         container:{
-           marginTop:10,
+           marginTop:10, 
             backgroundColor:'#ffffff',
            justifyContent:'center',
            height: 60,
